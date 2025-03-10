@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // armstrong number
+
+        let n = prompt("Enter a number: ");
+        let nums = []; // to store the power of the every singel digit
+
+        for(let i = 0; i < n.length; i++) {
+            let temp = Math.pow(n[i], n.length); // first digit of string(number) is power to the length of n
+            nums.push(temp);
+        }
+
+        let num = 0; // to stroe the number
+        nums.forEach((e) => {
+            num+=e; // sum of every eliment in nums array
+        });
+
+        if(num == n) {
+            console.log(`${n} is a armstrong number.`);
+        } else {
+            console.log(`${n} is not a armstrong number.`);
+        }
+
+    </script>
+</body>
+</html>
