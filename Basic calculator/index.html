@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // create a basic calculator
+
+        let num1 = prompt("Enter a number: ");
+        let num2 = prompt("Enter a number: ");
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+
+        let choice = prompt("Enter you choice +, -, *, / : ");
+
+        switch(choice) {
+            case '+': 
+                console.log(`sum of ${num1} + ${num2} = ${num1+num2}`);
+                break;
+            case '-':
+                console.log(`substraction of ${num1} - ${num2} = ${num1-num2}`);
+                break;
+            case '*': 
+                console.log(`multiplication of ${num1} * ${num2} = ${num1*num2}`);
+                break;
+            case '/':
+                console.log(`divition of ${num1} / ${num2} = ${num1/num2}`);
+                break;
+            default: console.log(`${choice} invalid choice!!`);
+        }
+
+    </script>
+</body>
+</html>
