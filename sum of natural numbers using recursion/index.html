@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // sum of natural number using recursion
+        let num = prompt("Enter a number: ");
+        num = parseInt(num);
+
+        function sum(n){
+
+            if(n > 0) {
+                return n + sum(n-1);
+            }else {
+                return n;
+            }
+        }
+
+        console.log(sum(num));
+    </script>
+</body>
+</html>
